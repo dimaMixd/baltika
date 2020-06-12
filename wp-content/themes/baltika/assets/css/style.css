@@ -147,6 +147,10 @@ nav .menu-wrap {
 .section--hero {
   min-height: 700px;
   background-size: cover; }
+  .section--hero.page {
+    min-height: 400px; }
+    .section--hero.page .hero-content {
+      padding-top: 3rem; }
   .section--hero .hero-content {
     display: flex;
     justify-content: center;
@@ -329,6 +333,9 @@ nav .menu-wrap {
         padding: 1rem; }
         .section--footer .brands-line ul li {
           padding: .5rem; } }
+
+.page-content {
+  padding: 4rem 1rem; }
 
 @keyframes blink {
   0% {

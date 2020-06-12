@@ -22,10 +22,10 @@ function add_theme_scripts() {
   }
   add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
-  function remove_editor() {
-    remove_post_type_support('page', 'editor');
-  }
-  add_action('admin_init', 'remove_editor');
+  // function remove_editor() {
+  //   remove_post_type_support('page', 'editor');
+  // }
+  // add_action('admin_init', 'remove_editor');
 
   if( function_exists('acf_add_options_page') ) {
 

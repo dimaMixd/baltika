@@ -210,6 +210,14 @@ nav {
         min-height: 700px;
         background-size: cover;
 
+        &.page {
+            min-height: 400px;
+            
+            .hero-content {
+                padding-top: 3rem;
+            }
+        }
+
 
         .hero-content {
             display: flex;
@@ -517,6 +525,10 @@ nav {
             }
         }
     }
+}
+
+.page-content {
+    padding: 4rem 1rem;
 }
 
 @keyframes blink {
