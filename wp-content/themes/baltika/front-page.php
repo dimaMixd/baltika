@@ -54,7 +54,7 @@
                 <h2>Strategy</h2>
                 <p>Baltika Group, headquartered in Tallinn and founded in 1928, is the leading fashion brand house in the Baltics. We own, operate the Baltic region. Read more.</p>
             </div>
-            <img src="http://localhost/baltika/wp-content/uploads/2020/06/strategy.jpg" class="card-bg" alt="">
+            <img src="https://roger.lu/baltika_page/wp-content/uploads/2020/06/strategy.jpg" class="card-bg" alt="">
         </div>
     </div>
     <div class="card-wrap" data-sal="slide-left" data-sal-duration="1500">
@@ -63,7 +63,7 @@
                 <h2>Values</h2>
                 <p>Baltika Group, headquartered in Tallinn and founded in 1928, is the leading fashion brand house in the Baltics. We own, operate the Baltic region. Read more.</p>
             </div>
-            <img src="http://localhost/baltika/wp-content/uploads/2020/06/values.jpg" class="card-bg" alt="">
+            <img src="https://roger.lu/baltika_page/wp-content/uploads/2020/06/values.jpg" class="card-bg" alt="">
         </div>
     </div>
 </div>
