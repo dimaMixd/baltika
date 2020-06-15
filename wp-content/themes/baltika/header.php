@@ -9,16 +9,5 @@
 </head>
 <body>
 <?php if( is_front_page() ): ?>
-<div id="loader">
-    <div class="logo-loader">
-        <img src="<?php echo get_template_directory_uri().'/assets/images/baltika.svg' ?>" width="200" alt=""><br>
-        <small>Loading<span>.</span><span>.</span><span>.</span></small>
-    </div>
-    <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-</div>
+    <?php //get_template_part( 'loader' );  ?>
 <?php endif; ?>

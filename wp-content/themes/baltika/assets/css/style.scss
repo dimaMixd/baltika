@@ -158,6 +158,56 @@ a {
 }
 
 nav {
+
+    &.desktop-menu {
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &.mobile-menu {
+        @media(min-width: 768px) {
+            display: none;
+        }
+
+        .black-fade {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.75);
+            left: 0;
+            top: 0;
+            z-index: 8999;
+            display: none;
+        }
+
+        .menu-box {
+            background: #222;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 9000;
+            transition: all .4s;
+            transform: translateX(100%);
+
+            ul {
+                li {
+                    a {
+                        color: #fff;
+                        padding: .75rem;
+                        display: block;
+
+                        &:hover {
+                            background: #1e2d2d;
+                            color: #f1a85e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .logo {
         display: flex;
         justify-content: center;
@@ -204,6 +254,36 @@ nav {
     }
 }
 
+.menu-opened {
+    .mobile-menu {
+
+        .black-fade {
+            display: block;
+        }
+
+        .burger-icon {
+            position: fixed;
+            .bottom-bar {
+                transform: rotate(-45deg);
+                left: 5px;
+            }
+
+            .middle-bar {
+                opacity: 0;
+            }
+
+            .top-bar {
+                transform: rotate(45deg);
+                left: 5px;
+            }
+        }
+    }
+
+    .menu-box {
+        transform: translateX(0) !important;
+    }
+}
+
 .section {
 
     &--hero {
@@ -243,9 +323,15 @@ nav {
                 border: none;
                 padding: .75rem 1.5rem;
                 font-size: 1rem;
+                transition: all .4s;
+                cursor: pointer;
 
                 @media(min-width: 1200px) {
                     font-size: 1.2vw;
+                }
+
+                &:hover {
+                    transform: translateY(5px);
                 }
             }
         }
@@ -294,6 +380,18 @@ nav {
             article {
                 display: flex;
                 min-height: 600px;
+
+                &:nth-child(even) {
+                    @media(max-width: 767px) {
+                        .brand-preview {
+                            order:1;
+                        }
+
+                        .brand-description {
+                            order:0;
+                        }
+                    }
+                }
 
                 @media(max-width: 767px) {
                     min-height: auto;
@@ -403,7 +501,7 @@ nav {
                         color: #fff;
                     }
 
-                    @media(max-width: 600px) {
+                    @media(max-width: 1200px) {
                         h2 {
                             font-size: 2.5rem;
                             margin-bottom: .5rem;
@@ -529,6 +627,206 @@ nav {
 
 .page-content {
     padding: 4rem 1rem;
+
+}
+
+.content-block {
+    display: flex;
+
+    .tabs {
+        min-width: 20%;
+        display: flex;
+        flex-direction: column;
+
+        .tab {
+            flex: 1;
+            padding-bottom: 50%;
+            position: relative;
+
+            &#jobs {
+                background: #fff;
+            }
+
+            &#internship {
+                background: #24373b;
+                color: #fff;
+            }
+
+            .tab-inner {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .content-inner {
+        flex: 1;
+        background: #9b9590;
+        padding: 4rem;
+        position: relative;
+        
+        .video-block {
+            margin: 0 auto;
+            background: #666;
+            padding-top: 591.44px / 1127.34px * 100%;
+            
+            position: relative;
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .tabs-content {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            left: 0;
+            transition: opacity .4s;
+            transform-origin: center;
+
+            &.active {
+                width: 100%;
+                height: 100%;
+            }
+
+            #jobs-content {
+                background: #fff !important;
+                color: #000;
+            }
+
+            #internship-content {
+                background: #24373b !important;
+                color: #fff;
+            }
+
+            .tab-inner-content {
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                transition: all .4s;
+                padding: 4rem;
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                overflow-y: scroll;
+
+                .close-window {
+                    position: absolute;
+                    width: 20px;
+                    right: 10px;
+                    top: 10px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &.active {
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 100;
+                }
+            }
+        }
+
+        @media(max-width: 767px) {
+            padding: 2rem;
+
+            .tab-inner-content {
+                padding: 2rem !important;
+            }
+        }
+    }
+
+    @media(max-width: 767px) {
+        flex-direction: column;
+
+        .tabs {
+            flex-direction: row;
+
+            .tab {
+                padding-bottom: 20%;
+                .tab-inner {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.burger-icon {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    z-index: 9001;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+
+    .top-bar, .middle-bar, .bottom-bar {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        transition: all .4s;
+    }
+
+    .top-bar {
+        top: 0;
+        transform-origin: left;
+        left: 0;
+    }
+
+    .middle-bar {
+        top: calc(50% - 1.5px);
+    }
+
+    .bottom-bar {
+        top: calc(100% - 3px);
+        left: 0;
+        transform-origin: left;
+    }
+}
+
+.banner {
+    background: #000;
+    overflow: hidden;
+    padding-left: 5rem;
+    h2 {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 1200px) {
+        padding-left: 10vw;
+    }
+
+    @media(max-width: 767px) {
+        padding-left: 2rem;
+        h2 {
+            font-size: 2rem;
+        }
+    }
 }
 
 @keyframes blink {

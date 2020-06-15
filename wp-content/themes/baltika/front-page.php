@@ -50,20 +50,22 @@
 <div class="section section--cards">
     <div class="card-wrap" data-sal="slide-right" data-sal-duration="1500">
         <div class="card">
+            <?php $strategy = get_field('strategy'); ?>
             <div class="card-inner">
-                <h2>Strategy</h2>
-                <p>Baltika Group, headquartered in Tallinn and founded in 1928, is the leading fashion brand house in the Baltics. We own, operate the Baltic region. Read more.</p>
+                <h2><?php echo $strategy['headline']; ?></h2>
+                <p><?php echo $strategy['description']; ?></p>
             </div>
-            <img src="https://roger.lu/baltika_page/wp-content/uploads/2020/06/strategy.jpg" class="card-bg" alt="">
+            <img src="<?php echo $strategy['background']; ?>" class="card-bg" alt="">
         </div>
     </div>
     <div class="card-wrap" data-sal="slide-left" data-sal-duration="1500">
         <div class="card">
+            <?php $values = get_field('values'); ?>
             <div class="card-inner">
-                <h2>Values</h2>
-                <p>Baltika Group, headquartered in Tallinn and founded in 1928, is the leading fashion brand house in the Baltics. We own, operate the Baltic region. Read more.</p>
+                <h2><?php echo $values['headline']; ?></h2>
+                <p><?php echo $values['description']; ?></p>
             </div>
-            <img src="https://roger.lu/baltika_page/wp-content/uploads/2020/06/values.jpg" class="card-bg" alt="">
+            <img src="<?php echo $values['background']; ?>" class="card-bg" alt="">
         </div>
     </div>
 </div>
