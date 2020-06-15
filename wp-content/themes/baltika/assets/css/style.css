@@ -321,6 +321,9 @@ nav .menu-wrap {
           font-size: 1.5vw; }
         .section--cards .card-wrap .card .card-inner p {
           font-size: 1.25vw; }
+          .section--cards .card-wrap .card .card-inner p a {
+            color: inherit;
+            text-decoration: underline; }
         .section--cards .card-wrap .card .card-inner h2, .section--cards .card-wrap .card .card-inner p {
           color: #fff; }
         @media (max-width: 1200px) {
