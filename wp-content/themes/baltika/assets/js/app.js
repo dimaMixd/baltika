@@ -5,7 +5,7 @@ window.onload = () => {
     //remove loader after 2500ml
     setTimeout(() =>{
         loader.style.display = 'none';
-    }, 3500);
+    }, 3200);
 
     let discoverBtn = document.getElementById('discover');
     let brandsView = document.getElementById('brands-view');
