@@ -17,34 +17,41 @@
         </ul>
     </header>
     <section class="brands">
-        <?php if( have_rows('brands') ): ?>
-            <?php $counter = 1; ?>
-            <?php while ( have_rows('brands') ) : the_row(); ?>
-                    <?php $block = get_sub_field('brand_block'); ?>
-                    <?php if( $counter%2 !=0 ): ?>
-                        <article data-sal="slide-up" data-sal-duration="1500">
-                            <div class="brand-description">
-                                <h2><?php echo $block['headline'] ?></h2>
-                                <p><?php echo $block['description']; ?></p>
-                            </div>
-                            <div class="brand-preview">
-                                <img src="<?php echo $block['image']; ?>" alt="">
-                            </div>
-                        </article>
-                    <?php else: ?>
-                        <article data-sal="slide-up" data-sal-duration="1500">
-                            <div class="brand-preview">
-                                <img src="<?php echo $block['image']; ?>" alt="">
-                            </div>
-                            <div class="brand-description">
-                                <h2><?php echo $block['headline'] ?></h2>
-                                <p><?php echo $block['description']; ?></p>
-                            </div>
-                        </article>
-                    <?php endif; ?>
-                <?php $counter++; ?>
-            <?php endwhile; ?>
-        <?php endif; ?>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <?php if( have_rows('brands') ): ?>
+                    <?php $counter = 1; ?>
+                    <?php while ( have_rows('brands') ) : the_row(); ?>
+                            <?php $block = get_sub_field('brand_block'); ?>
+                            <?php if( $counter%2 !=0 ): ?>
+                                <article class="swiper-slide">
+                                    <div class="brand-description">
+                                        <h2><?php echo $block['headline'] ?></h2>
+                                        <p><?php echo $block['description']; ?></p>
+                                    </div>
+                                    <div class="brand-preview">
+                                        <img src="<?php echo $block['image']; ?>" alt="">
+                                    </div>
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide.svg'; ?>" width="50px" class="swiper-button-next" alt="">
+                                </article>
+                            <?php else: ?>
+                                <article class="swiper-slide">
+                                    <div class="brand-preview">
+                                        <img src="<?php echo $block['image']; ?>" alt="">
+                                    </div>
+                                    <div class="brand-description">
+                                        <h2><?php echo $block['headline'] ?></h2>
+                                        <p><?php echo $block['description']; ?></p>
+                                        
+                                    </div>
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide-brown.svg'; ?>" width="50px" class="swiper-button-next" alt="">
+                                </article>
+                            <?php endif; ?>
+                        <?php $counter++; ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+        </div>
     </section>
 </div>
 <div class="section section--cards">

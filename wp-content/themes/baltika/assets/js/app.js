@@ -4,7 +4,7 @@ window.onload = () => {
     
     //remove loader after 2500ml
     setTimeout(() =>{
-        loader.style.display = 'none';
+        //loader.style.display = 'none';
     }, 3200);
 
     let discoverBtn = document.getElementById('discover');
@@ -58,6 +58,19 @@ window.onload = () => {
     burgerIcon.addEventListener('click', function() {
         body.classList.toggle('menu-opened');
     })
-    
+
     sal();
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        effect: 'fade',
+    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+    })
+
+    //let tl = new TimelineLite();
 }

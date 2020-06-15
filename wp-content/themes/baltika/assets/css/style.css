@@ -135,15 +135,21 @@ nav.mobile-menu .menu-box {
   background: #222;
   position: fixed;
   width: 100%;
+  height: 100%;
   top: 0;
   right: 0;
   z-index: 9000;
   transition: all .4s;
-  transform: translateX(100%); }
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
   nav.mobile-menu .menu-box ul li a {
     color: #fff;
     padding: .75rem;
-    display: block; }
+    display: block;
+    font-size: 1.5rem; }
     nav.mobile-menu .menu-box ul li a:hover {
       background: #1e2d2d;
       color: #f1a85e; }
@@ -247,8 +253,8 @@ nav .menu-wrap {
       .section--brands header ul li {
         font-size: 1.25rem; } }
 .section--brands .brands article {
-  display: flex;
-  min-height: 600px; }
+  min-height: 600px;
+  display: flex; }
   @media (max-width: 767px) {
     .section--brands .brands article:nth-child(even) .brand-preview {
       order: 1; }
@@ -280,7 +286,7 @@ nav .menu-wrap {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    padding: 10vw 0; }
+    padding: 8vw 0; }
     .section--brands .brands article .brand-preview img {
       width: 60%; }
   @media (max-width: 1000px) {
