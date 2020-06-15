@@ -221,13 +221,14 @@ nav {
     }
 
     .menu-wrap {
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
         border-bottom: 1px solid rgba(255,255,255,.5);
         padding-bottom: .5rem;
 
         ul {
             display: flex;
+            justify-content: center;
 
             li {
                 a {
