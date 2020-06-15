@@ -9,5 +9,5 @@
 </head>
 <body>
 <?php if( is_front_page() ): ?>
-    <?php //get_template_part( 'loader' );  ?>
+    <?php get_template_part( 'loader' );  ?>
 <?php endif; ?>
