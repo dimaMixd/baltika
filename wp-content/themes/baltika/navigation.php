@@ -17,10 +17,10 @@
 <nav class="mobile-menu">
     <div class="black-fade"></div>
     <div class="row">
-        <div class="col-4">
-            <img src="<?php echo get_template_directory_uri().'/images/logo.svg'; ?>" width="100%" alt="">
+        <div class="col-6">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/baltika.svg'; ?>" class="mobile-logo" width="100%" alt="">
         </div>
-        <div class="offset-6 col-2">
+        <div class="offset-4 col-2">
             <div class="burger-icon" id="burger-icon">
                 <span class="top-bar"></span>
                 <span class="middle-bar"></span>

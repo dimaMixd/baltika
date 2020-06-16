@@ -261,12 +261,19 @@ nav {
     }
 }
 
-.menu-opened {
-    .mobile-menu {
+.mobile-logo {
+    margin-top: 1rem;
+}
 
+.menu-opened {
+
+
+    .mobile-menu {
+        
         .black-fade {
             display: block;
         }
+
 
         .burger-icon {
             position: fixed;

@@ -182,6 +182,9 @@ nav .menu-wrap {
     nav .menu-wrap ul li:first-child a {
       padding-left: 0; }
 
+.mobile-logo {
+  margin-top: 1rem; }
+
 .menu-opened .mobile-menu .black-fade {
   display: block; }
 .menu-opened .mobile-menu .burger-icon {
