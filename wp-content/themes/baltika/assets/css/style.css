@@ -55,7 +55,7 @@ a {
   z-index: 9999; }
   #loader .logo-loader {
     position: relative;
-    max-width: 400px;
+    max-width: 250px;
     z-index: 10;
     animation: fadeOut .8s;
     animation-fill-mode: forwards;
