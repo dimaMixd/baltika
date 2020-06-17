@@ -59,7 +59,9 @@ window.onload = () => {
         body.classList.toggle('menu-opened');
     })
 
-    sal();
+    sal({
+        threshold: 0.15
+    });
 
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
