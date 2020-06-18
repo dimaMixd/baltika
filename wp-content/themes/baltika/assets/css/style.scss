@@ -569,20 +569,16 @@ nav {
         .footer-links {
 
             ul {
-                margin-top: 1rem;
 
                 li {
-                    &:nth-child(n+2) {
-                        margin-top: .5rem;
-                    }
-
                     a {
                         font-size: 1rem;
+                        display: block;
                     }
                 }
             }
 
-            @media(min-width: 1200px) {
+            @media(min-width: 1700px) {
                 ul {
                     li {
                         a {

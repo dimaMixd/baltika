@@ -359,13 +359,10 @@ nav .menu-wrap {
       font-size: 1.8vw; } }
   .section--footer h2, .section--footer a {
     color: #fff; }
-  .section--footer .footer-links ul {
-    margin-top: 1rem; }
-    .section--footer .footer-links ul li:nth-child(n+2) {
-      margin-top: .5rem; }
-    .section--footer .footer-links ul li a {
-      font-size: 1rem; }
-  @media (min-width: 1200px) {
+  .section--footer .footer-links ul li a {
+    font-size: 1rem;
+    display: block; }
+  @media (min-width: 1700px) {
     .section--footer .footer-links ul li a {
       font-size: 1.2vw; } }
   .section--footer .footer-contact p {
