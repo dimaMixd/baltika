@@ -16,7 +16,7 @@
             <li>Strategy</li>
         </ul>
     </header>
-    <section class="brands">
+    <section class="brands" data-sal="slide-up" data-sal-duration="1000">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <?php if( have_rows('brands') ): ?>
@@ -30,20 +30,34 @@
                                         <p><?php echo $block['description']; ?></p>
                                     </div>
                                     <div class="brand-preview">
+                                        <div class="next-mobile">
+                                            <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
+                                        </div>
+                                        <div class="prev-mobile">
+                                            <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
+                                        </div>
                                         <img src="<?php echo $block['image']; ?>" alt="">
                                     </div>
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide-brown.svg'; ?>" width="50px" class="swiper-button-prev" alt="">
                                     <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide.svg'; ?>" width="50px" class="swiper-button-next" alt="">
                                 </article>
                             <?php else: ?>
                                 <article class="swiper-slide">
-                                    <div class="brand-preview">
+                                    <div class="brand-preview order-1">
+                                        <div class="next-mobile">
+                                            <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
+                                        </div>
+                                        <div class="prev-mobile">
+                                            <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
+                                        </div>
                                         <img src="<?php echo $block['image']; ?>" alt="">
                                     </div>
-                                    <div class="brand-description">
+                                    <div class="brand-description order-0">
                                         <h2><?php echo $block['headline'] ?></h2>
                                         <p><?php echo $block['description']; ?></p>
                                         
                                     </div>
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide.svg'; ?>" width="50px" class="swiper-button-prev" alt="">
                                     <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide-brown.svg'; ?>" width="50px" class="swiper-button-next" alt="">
                                 </article>
                             <?php endif; ?>

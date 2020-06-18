@@ -1,6 +1,6 @@
 <div id="loader">
     <div class="logo-loader">
-        <img src="<?php echo get_template_directory_uri().'/assets/images/baltika.svg' ?>" width="200" alt=""><br>
+        <img src="<?php echo get_template_directory_uri().'/assets/images/baltika.svg'; ?>" width="200" alt=""><br>
         <small>Loading<span>.</span><span>.</span><span>.</span></small>
     </div>
     <div class="lines">
