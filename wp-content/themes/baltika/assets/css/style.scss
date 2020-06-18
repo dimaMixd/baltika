@@ -460,6 +460,10 @@ nav {
                         padding: .25rem;
                         z-index: 8888;
 
+                        @media(min-width: 901px) {
+                            display: none;
+                        }
+
                         img {
                             width: 30px;
                         }

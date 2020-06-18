@@ -299,6 +299,10 @@ nav .menu-wrap {
       top: -17px;
       padding: .25rem;
       z-index: 8888; }
+      @media (min-width: 901px) {
+        .section--brands .brands article .brand-preview .next-mobile,
+        .section--brands .brands article .brand-preview .prev-mobile {
+          display: none; } }
       .section--brands .brands article .brand-preview .next-mobile img,
       .section--brands .brands article .brand-preview .prev-mobile img {
         width: 30px; }
