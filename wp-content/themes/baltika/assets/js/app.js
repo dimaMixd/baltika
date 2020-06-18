@@ -69,8 +69,8 @@ window.onload = () => {
     
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next .next-mobile',
-          prevEl: '.swiper-button-prev .prev-mobile',
+          nextEl: '.swipe-next',
+          prevEl: '.swipe-prev'
         }
     })
 

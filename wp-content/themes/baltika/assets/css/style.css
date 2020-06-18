@@ -319,12 +319,12 @@ nav .menu-wrap {
       flex-direction: column; }
       .section--brands .brands article .brand-description {
         width: 100%; } }
-  .section--brands .brands article .swiper-button-next:hover,
-  .section--brands .brands article .swiper-button-prev:hover {
+  .section--brands .brands article > .swiper-button-next:hover,
+  .section--brands .brands article > .swiper-button-prev:hover {
     opacity: .5; }
   @media (max-width: 900px) {
-    .section--brands .brands article .swiper-button-next,
-    .section--brands .brands article .swiper-button-prev {
+    .section--brands .brands article > .swiper-button-next,
+    .section--brands .brands article > .swiper-button-prev {
       display: none !important; } }
 .section--cards {
   display: flex; }

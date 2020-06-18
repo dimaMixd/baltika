@@ -30,24 +30,24 @@
                                         <p><?php echo $block['description']; ?></p>
                                     </div>
                                     <div class="brand-preview">
-                                        <div class="next-mobile">
+                                        <div class="next-mobile swipe-next">
                                             <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
                                         </div>
-                                        <div class="prev-mobile">
+                                        <div class="prev-mobile swipe-prev">
                                             <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
                                         </div>
                                         <img src="<?php echo $block['image']; ?>" alt="">
                                     </div>
-                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide-brown.svg'; ?>" width="50px" class="swiper-button-prev" alt="">
-                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide.svg'; ?>" width="50px" class="swiper-button-next" alt="">
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide-brown.svg'; ?>" width="50px" class="swiper-button-prev swipe-prev" alt="">
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide.svg'; ?>" width="50px" class="swiper-button-next swipe-next" alt="">
                                 </article>
                             <?php else: ?>
                                 <article class="swiper-slide">
                                     <div class="brand-preview order-1">
-                                        <div class="next-mobile">
+                                        <div class="next-mobile swipe-next">
                                             <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
                                         </div>
-                                        <div class="prev-mobile">
+                                        <div class="prev-mobile swipe-prev">
                                             <img src="<?php echo get_template_directory_uri().'/assets/images/next-mobile.svg'; ?>" alt="">
                                         </div>
                                         <img src="<?php echo $block['image']; ?>" alt="">
@@ -57,8 +57,8 @@
                                         <p><?php echo $block['description']; ?></p>
                                         
                                     </div>
-                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide.svg'; ?>" width="50px" class="swiper-button-prev" alt="">
-                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide-brown.svg'; ?>" width="50px" class="swiper-button-next" alt="">
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide.svg'; ?>" width="50px" class="swiper-button-prev swipe-prev" alt="">
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide-brown.svg'; ?>" width="50px" class="swiper-button-next swipe-next" alt="">
                                 </article>
                             <?php endif; ?>
                         <?php $counter++; ?>
