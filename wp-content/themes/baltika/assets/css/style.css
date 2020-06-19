@@ -219,7 +219,7 @@ nav .menu-wrap {
       margin-bottom: 1rem; }
       @media (min-width: 1200px) {
         .section--hero .hero-content h2 {
-          font-size: 4vw; } }
+          font-size: 3vw; } }
     .section--hero .hero-content button {
       outline: 0;
       background: #fff;
@@ -281,9 +281,9 @@ nav .menu-wrap {
       font-size: 1rem; }
     @media (min-width: 1200px) {
       .section--brands .brands article .brand-description h2 {
-        font-size: 3vw; }
+        font-size: 2.5vw; }
       .section--brands .brands article .brand-description p {
-        font-size: 1.25vw; } }
+        font-size: 1.1vw; } }
   .section--brands .brands article .brand-preview {
     background: #9b9590;
     display: flex;
@@ -358,7 +358,7 @@ nav .menu-wrap {
         .section--cards .card-wrap .card .card-inner h2 {
           font-size: 1.5vw; }
         .section--cards .card-wrap .card .card-inner p {
-          font-size: 1.25vw; }
+          font-size: 1.25rem; }
           .section--cards .card-wrap .card .card-inner p a {
             color: inherit;
             text-decoration: underline; }
@@ -367,9 +367,7 @@ nav .menu-wrap {
         @media (max-width: 1200px) {
           .section--cards .card-wrap .card .card-inner h2 {
             font-size: 2.5rem;
-            margin-bottom: .5rem; }
-          .section--cards .card-wrap .card .card-inner p {
-            font-size: 1.25rem; } }
+            margin-bottom: .5rem; } }
       .section--cards .card-wrap .card:hover .card-bg {
         transform: scale(1.15); }
   @media (max-width: 767px) {
@@ -394,9 +392,6 @@ nav .menu-wrap {
     .section--footer .footer-links ul li a {
       font-size: 1rem;
       display: block; }
-  @media (min-width: 1700px) {
-    .section--footer .footer-links ul li a {
-      font-size: 1.2vw; } }
   .section--footer .footer-contact p {
     color: #fff;
     line-height: 2;
