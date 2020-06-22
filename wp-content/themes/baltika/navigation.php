@@ -1,6 +1,6 @@
 <nav class="desktop-menu">
     <div class="logo">
-        <a href="<?php home_url() ?>">
+        <a href="<?php echo get_home_url(); ?>">
             <img src="<?php echo get_template_directory_uri().'/assets/images/baltika.svg'; ?>" width="200" alt="">
         </a>
     </div>

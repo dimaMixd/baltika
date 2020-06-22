@@ -387,11 +387,8 @@ nav {
         }
         .brands {
             article {
-                min-height: 600px;
+                min-height: 650px;
                 display: flex;
-
-                &.active {
-                }
 
                 &:nth-child(even) {
                     @media(max-width: 900px) {
@@ -554,6 +551,7 @@ nav {
                         a {
                             color: inherit;
                             text-decoration: underline;
+                            font-size: inherit;
                         }
                     }
 
@@ -721,7 +719,6 @@ nav {
     .content-inner {
         flex: 1;
         background: #9b9590;
-        padding: 4rem;
         position: relative;
         
         .video-block {
@@ -781,6 +778,7 @@ nav {
                     width: 20px;
                     right: 10px;
                     top: 10px;
+                    cursor: pointer;
 
                     img {
                         width: 100%;

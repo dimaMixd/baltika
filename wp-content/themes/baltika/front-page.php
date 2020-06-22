@@ -57,8 +57,8 @@
                                         <p><?php echo $block['description']; ?></p>
                                         
                                     </div>
-                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide.svg'; ?>" width="50px" class="swiper-button-prev swipe-prev" alt="">
-                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide-brown.svg'; ?>" width="50px" class="swiper-button-next swipe-next" alt="">
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/prev-slide-brown.svg'; ?>" width="50px" class="swiper-button-prev swipe-prev" alt="">
+                                    <img src="<?php echo get_template_directory_uri().'/assets/images/next-slide.svg'; ?>" width="50px" class="swiper-button-next swipe-next" alt="">
                                 </article>
                             <?php endif; ?>
                         <?php $counter++; ?>

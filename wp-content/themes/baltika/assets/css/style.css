@@ -254,7 +254,7 @@ nav .menu-wrap {
       .section--brands header ul li {
         font-size: 1.25rem; } }
 .section--brands .brands article {
-  min-height: 600px;
+  min-height: 650px;
   display: flex; }
   @media (max-width: 900px) {
     .section--brands .brands article:nth-child(even) .brand-preview {
@@ -358,7 +358,8 @@ nav .menu-wrap {
           font-size: 1.25rem; }
           .section--cards .card-wrap .card .card-inner p a {
             color: inherit;
-            text-decoration: underline; }
+            text-decoration: underline;
+            font-size: inherit; }
         .section--cards .card-wrap .card .card-inner h2, .section--cards .card-wrap .card .card-inner p {
           color: #fff; }
         @media (max-width: 1200px) {
@@ -457,7 +458,6 @@ nav .menu-wrap {
   .content-block .content-inner {
     flex: 1;
     background: #9b9590;
-    padding: 4rem;
     position: relative; }
     .content-block .content-inner .video-block {
       margin: 0 auto;
@@ -503,7 +503,8 @@ nav .menu-wrap {
           position: absolute;
           width: 20px;
           right: 10px;
-          top: 10px; }
+          top: 10px;
+          cursor: pointer; }
           .content-block .content-inner .tabs-content .tab-inner-content .close-window img {
             width: 100%; }
         .content-block .content-inner .tabs-content .tab-inner-content.active {
