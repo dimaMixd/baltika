@@ -367,9 +367,12 @@ nav {
 
                 li {
                     font-size: 2rem;
+                    border-bottom: 3px solid;
+                    border-color: transparent;
+                    transition: all .4s;
 
                     &:hover {
-                        text-decoration: underline;
+                        border-color: black;
                     }
                 }
 
@@ -484,6 +487,10 @@ nav {
                     .brand-description {
                         width: 100%;
                     }
+                }
+
+                .swiper-wrapper {
+                    background: #9b9590;
                 }
 
                 > .swiper-button-next,
@@ -733,6 +740,7 @@ nav {
                 left: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -850,6 +858,42 @@ nav {
         top: calc(100% - 3px);
         left: 0;
         transform-origin: left;
+    }
+}
+
+.why-baltika {
+    display: flex;
+
+    .img-wrapper {
+        width: 20%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-wrapper {
+        flex: 1;
+        padding: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    @media(max-width: 900px) {
+        flex-direction: column;
+
+        .img-wrapper {
+            height: 300px;
+            width: 100%;
+            background-position: top !important;
+        }
     }
 }
 
