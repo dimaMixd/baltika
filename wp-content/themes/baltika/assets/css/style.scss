@@ -454,6 +454,7 @@ nav {
                         top: -17px;
                         padding: .25rem;
                         z-index: 8888;
+                        display: flex;
 
                         @media(min-width: 901px) {
                             display: none;

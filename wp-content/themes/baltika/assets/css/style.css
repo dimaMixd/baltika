@@ -298,7 +298,8 @@ nav .menu-wrap {
       background: #716f6e;
       top: -17px;
       padding: .25rem;
-      z-index: 8888; }
+      z-index: 8888;
+      display: flex; }
       @media (min-width: 901px) {
         .section--brands .brands article .brand-preview .next-mobile,
         .section--brands .brands article .brand-preview .prev-mobile {
