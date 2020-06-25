@@ -212,7 +212,13 @@ nav {
             justify-content: center;
             text-align: center;
 
+            .sub-menu{
+                width: 100%;
+                position: relative;
+            }
+
             ul {
+                width: 100%;
                 li {
                     a {
                         color: #fff;

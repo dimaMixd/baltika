@@ -66,6 +66,7 @@ window.onload = () => {
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
         effect: 'fade',
+        autoHeight: true,
     
         // Navigation arrows
         navigation: {
