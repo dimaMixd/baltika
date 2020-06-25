@@ -73,6 +73,4 @@ window.onload = () => {
           prevEl: '.swipe-prev'
         }
     })
-
-    //let tl = new TimelineLite();
 }

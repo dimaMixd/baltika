@@ -310,7 +310,8 @@ nav .menu-wrap {
       top: -17px;
       padding: .25rem;
       z-index: 8888;
-      display: flex; }
+      display: flex;
+      height: 32px; }
       @media (min-width: 901px) {
         .section--brands .brands article .brand-preview .next-mobile,
         .section--brands .brands article .brand-preview .prev-mobile {

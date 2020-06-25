@@ -471,6 +471,7 @@ nav {
                         padding: .25rem;
                         z-index: 8888;
                         display: flex;
+                        height: 32px;
 
                         @media(min-width: 901px) {
                             display: none;
