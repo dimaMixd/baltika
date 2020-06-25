@@ -15,7 +15,7 @@ function add_theme_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'grid', get_template_directory_uri() . '/assets/css/_grid.min.css', array(), '1.1', 'all');
     wp_enqueue_style( 'main_style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.1', 'all');
-    wp_enqueue_style( 'sal_css', get_template_directory_uri() . '/assets/css/sal.css', array(), '1.1', true);
+    wp_enqueue_style( 'sal_css', get_template_directory_uri() . '/assets/css/sal.css', array(), '1.1', 'all');
     //js
     wp_enqueue_script( 'polyfill', 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver', false);
     wp_enqueue_script( 'lib', get_template_directory_uri() . '/assets/js/sal.js', array (), 1.1, true);
