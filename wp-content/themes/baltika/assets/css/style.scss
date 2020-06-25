@@ -970,7 +970,7 @@ nav {
     
     > a {
         &:after {
-            content: '';
+            content: '' !important;
             display: inline-block;
             width: .625rem;
             height: .625rem;

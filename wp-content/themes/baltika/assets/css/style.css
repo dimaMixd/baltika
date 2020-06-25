@@ -625,7 +625,7 @@ nav .menu-wrap {
   .menu-item-has-children:hover > a:after {
     transform: translateY(0.125rem) rotate(135deg); }
   .menu-item-has-children > a:after {
-    content: '';
+    content: '' !important;
     display: inline-block;
     width: .625rem;
     height: .625rem;
