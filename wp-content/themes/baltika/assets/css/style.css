@@ -158,7 +158,12 @@ nav.mobile-menu .menu-box {
   text-align: center; }
   nav.mobile-menu .menu-box .sub-menu {
     width: 100%;
-    position: relative; }
+    position: relative;
+    transition: all 1s;
+    max-height: 0;
+    overflow: hidden; }
+  nav.mobile-menu .menu-box .menu-item-has-children:hover .sub-menu {
+    max-height: 600px !important; }
   nav.mobile-menu .menu-box ul {
     width: 100%; }
     nav.mobile-menu .menu-box ul li a {
@@ -652,10 +657,12 @@ nav .menu-wrap {
   position: absolute;
   top: 100%;
   left: 0;
-  display: none !important;
   background-color: #292826;
   -webkit-box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, 0.2) !important;
   box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, 0.2) !important; }
+  @media (min-width: 768px) {
+    .sub-menu {
+      display: none !important; } }
   .sub-menu li {
     display: block !important; }
     .sub-menu li a {
