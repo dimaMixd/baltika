@@ -936,3 +936,66 @@ nav {
         opacity: 0;
     }
 }
+
+.menu-item-has-children {
+    position: relative;
+    &:hover {
+        .sub-menu {
+            display: block !important;
+        }
+
+        > a {
+
+            &:after {
+                transform: translateY(.125rem) rotate(135deg);
+            }
+        }
+    }
+    
+    > a {
+        &:after {
+            content: '';
+            display: inline-block;
+            width: .625rem;
+            height: .625rem;
+            margin-left: .625rem;
+            border-bottom: .125rem solid #fff;
+            border-left: .125rem solid #fff;
+            -webkit-transform: translateY(-.1875rem) rotate(-45deg);
+            -o-transform: translateY(-.1875rem) rotate(-45deg);
+            transform: translateY(-.1875rem) rotate(-45deg);
+            -webkit-transition: border-left 175ms ease-in-out,border-bottom 175ms ease-in-out,-webkit-transform 175ms ease-in-out;
+            transition: border-left 175ms ease-in-out,border-bottom 175ms ease-in-out,-webkit-transform 175ms ease-in-out;
+            -o-transition: border-left 175ms ease-in-out,border-bottom 175ms ease-in-out,-o-transform 175ms ease-in-out;
+            transition: transform 175ms ease-in-out,border-left 175ms ease-in-out,border-bottom 175ms ease-in-out;
+            transition: transform 175ms ease-in-out,border-left 175ms ease-in-out,border-bottom 175ms ease-in-out,-webkit-transform 175ms ease-in-out,-o-transform 175ms ease-in-out;
+        }
+    }
+}
+
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none !important;
+    background-color: #292826;
+    -webkit-box-shadow: 0 0.3125rem 1.5625rem rgba(0,0,0,.2) !important;
+    box-shadow: 0 0.3125rem 1.5625rem rgba(0,0,0,.2) !important;
+    
+    li {
+        display: block !important;
+        
+        a {
+            display: block !important;
+            padding-top: 1.25rem !important;
+            padding-bottom: .9375rem !important;
+            color: #fff;
+            padding-left: .5rem !important;
+
+            &:hover {
+                background: #1f1e1d;
+            }
+        }
+    }
+}

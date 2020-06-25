@@ -4,7 +4,7 @@ window.onload = () => {
     
     //remove loader after 2500ml
     setTimeout(() =>{
-        loader.style.display = 'none';
+        //loader.style.display = 'none';
     }, 3200);
 
     let discoverBtn = document.getElementById('discover');
