@@ -28,6 +28,10 @@
                                     <div class="brand-description">
                                         <h2><?php echo $block['headline'] ?></h2>
                                         <p><?php echo $block['description']; ?></p>
+                                        <?php if( $block['has_button'] ): ?>
+                                            <?php $button = $block['button']; ?>
+                                            <a href="<?php echo $button['link'] ?>" class="btn btn--brown"><?php echo $button['text'] ?></a>
+                                        <?php endif; ?>
                                     </div>
                                     <div class="brand-preview">
                                         <div class="next-mobile swipe-next">

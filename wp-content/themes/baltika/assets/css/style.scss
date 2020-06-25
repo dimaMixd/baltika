@@ -57,6 +57,21 @@ a {
     text-align: center;
 }
 
+.btn {
+    padding: 1rem 3rem;
+    display: inline-block;
+    transition: all .4s;
+
+    &--brown {
+        background: #292826;
+        color: #fff;
+    }
+    
+    &:hover {
+        background: #1f1e1d;
+    }
+}
+
 #loader {
     position: fixed;
     width: 100%;
@@ -67,6 +82,7 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    pointer-events: none;
 
     .logo-loader {
         position: relative;
