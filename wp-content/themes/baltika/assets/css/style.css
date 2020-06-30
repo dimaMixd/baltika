@@ -6,18 +6,18 @@
 */
 @font-face {
   font-family: 'Avenir';
-  src: url("../fonts/AvenirNext-Regular.ttf");
   src: url("../fonts/AvenirNext-Regular.eot");
+  src: url("../fonts/AvenirNext-Regular.ttf") format("truetype");
   font-weight: 300; }
 @font-face {
   font-family: 'Avenir Next';
-  src: url("../fonts/AvenirNext-Bold.ttf");
   src: url("../fonts/AvenirNext-Bold.eot");
+  src: url("../fonts/AvenirNext-Bold.ttf") format("truetype");
   font-weight: bold; }
 @font-face {
   font-family: 'Avenir Next';
-  src: url("../fonts/Avenir-Light.ttf");
   src: url("../fonts/Avenir-Light.eot");
+  src: url("../fonts/Avenir-Light.ttf") format("truetype");
   font-weight: 100; }
 * {
   -webkit-box-sizing: border-box;
