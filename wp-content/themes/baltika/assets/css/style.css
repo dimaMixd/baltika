@@ -38,7 +38,7 @@ h1, h2, h3 {
   letter-spacing: 2px; }
 
 .light {
-  font-family: 'Avenir';
+  font-family: 'Avenir', sans-serif;
   font-weight: 100; }
 
 *::-moz-selection {
