@@ -11,13 +11,13 @@
   font-weight: 300;
   font-style: normal; }
 @font-face {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Avenir Next';
   src: url("../fonts/Avenir-Light.eot");
   src: local("../fonts/Avenir-Light"), url("../fonts/Avenir-Light.eot") format("embedded-opentype"), url("../fonts/Avenir-Light.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 @font-face {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Avenir Next';
   src: url("../fonts/Avenir-Light.eot");
   src: local("../fonts/Avenir-Light"), url("../fonts/Avenir-Light.eot") format("embedded-opentype"), url("../fonts/Avenir-Light.ttf") format("truetype");
   font-weight: bold;
@@ -30,10 +30,10 @@ body {
   margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Avenir Next', sans-serif; }
+  font-family: 'Avenir Next'; }
 
 h1, h2, h3 {
-  font-family: 'Avenir';
+  font-family: 'Avenir', sans-serif;
   font-weight: 100;
   letter-spacing: 2px; }
 
@@ -555,7 +555,7 @@ nav .menu-wrap {
   background: #000; }
   .section--footer h2 {
     margin: 0;
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'Avenir Next';
     font-weight: bold;
     font-size: 2rem; }
   @media (min-width: 1200px) {
