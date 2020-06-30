@@ -19,8 +19,6 @@ function add_theme_scripts() {
     //js
     wp_enqueue_script( 'polyfill', 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver', false);
     wp_enqueue_script( 'lib', get_template_directory_uri() . '/assets/js/sal.js', array (), 1.1, true);
-    //wp_enqueue_script( 'script2', get_template_directory_uri() . '/assets/js/TimelineMax.min.js', array (), 1.1, true);
-    //wp_enqueue_script( 'swiper2', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js', false );
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js', array (), 1.1, true);
     wp_enqueue_script( 'swiper', 'https://unpkg.com/swiper/js/swiper.min.js', false );
   }

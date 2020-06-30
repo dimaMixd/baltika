@@ -11,6 +11,13 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<script>
+    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+    var body = document.querySelectorAll('body')[0];
+    if(isIE11) {
+        body.classList.add('IE11');
+    }
+</script>
 <?php if( is_front_page() ): ?>
     <?php get_template_part( 'loader' );  ?>
 <?php endif; ?>

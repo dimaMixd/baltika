@@ -1,4 +1,3 @@
-<?php wp_footer(); ?>
 <section class="section section--footer">
     <div class="brands-line">
         <ul>
@@ -44,5 +43,6 @@
         </div>
     </div>
 </section>
+<?php wp_footer(); ?>
 </body>
 </html>
